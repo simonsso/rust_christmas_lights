@@ -1,5 +1,8 @@
 ## Digispark ATtiny85 Christmas light
 
+This is a rust reimplementaion for https://github.com/simonsso/christmas_lights targeting only the Digispark ATtiny low cost hardware platform.
+
+This project is created using [Tomasz Wiszkowski's templates](https://github.com/tomasz-wiszkowski/rust-attiny85-blink)
 ### Requirements
 
 To use this, you need to 
