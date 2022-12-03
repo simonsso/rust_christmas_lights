@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 panic-halt = "0.2.0"
+deposit-iter = {git="https://github.com/simonsso/deposit_iter.git", branch="master"}
 [dependencies.avrd]
 git = "https://github.com/avr-rust/avrd.git"
 branch = "master"
