@@ -4,15 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-panic-halt = "0.2.0"
+panic-halt = "1.0.0"
 deposit-iter = {git="https://github.com/simonsso/deposit_iter.git", branch="master"}
-[dependencies.avrd]
-git = "https://github.com/avr-rust/avrd.git"
-branch = "master"
-features = ["all-mcus"]
+avrd = {version = "1.0.0", features = ["all-mcus"] }
 [dependencies.arduino-hal]
 git = "https://github.com/Rahix/avr-hal"
-branch = "main"
+tag = "ravedude-0.1.5"
 features = ["trinket"]  # This is the attiny.
 [profile.release]
 lto = true

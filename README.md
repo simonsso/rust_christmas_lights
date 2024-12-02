@@ -27,3 +27,8 @@ Due to limitations of the programmable memory on this microcontroller,
 * When using Arduino IDE, replace the Digispark-shipped `micronucleus` with the one you built. 
 * `micronucleus` repo has bootrom upgrades that can be used to update your `attiny85`
 * Updated `attiny85` won't work with obsolete version shipped by Digispark.
+
+### Update 2024
+```
+cargo +nightly-2022-07-10 run --release
+```

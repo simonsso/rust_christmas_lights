@@ -1,5 +1,6 @@
 #![no_std]
 #![no_main]
+#![feature(int_roundings)]
 
 const INTERNAL_MAX: i32 = 0xFF00;
 extern crate panic_halt;
