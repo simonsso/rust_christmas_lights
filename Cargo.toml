@@ -6,7 +6,6 @@ edition = "2021"
 [dependencies]
 panic-halt = "1.0.0"
 deposit-iter = { git = "https://github.com/simonsso/deposit_iter.git", branch = "master" }
-avrd = { version = "1.0.0", features = ["all-mcus"] }
 
 [dependencies.arduino-hal]
 git = "https://github.com/Rahix/avr-hal"
@@ -15,4 +14,6 @@ features = ["trinket"]  # This is the attiny.
 [profile.release]
 lto = true
 panic = "abort"  # fixes eh_personality
+opt-level = "s"  # Optimize for size (required for newer nightlies)
+codegen-units = 1  # Better codegen for AVR
 
