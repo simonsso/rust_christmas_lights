@@ -7,12 +7,10 @@ This project is created using [Tomasz Wiszkowski's templates](https://github.com
 
 To use this, you need to 
 * download  `micronucleus` from [Github repo](https://github.com/micronucleus/micronucleus/tree/master). 
-* install Rust nightly from 2022
+* install Rust nightly (handled automatically via `rust-toolchain.toml`)
 * install AVR GCC
 
 ```
-rustup toolchain add nightly-2022-07-10
-rustup component add rust-src --toolchain nightly-2022-07-10-x86_64-unknown-linux-gnu
 sudo apt-get install avr-libc gcc-avr
 curl https://raw.githubusercontent.com/micronucleus/micronucleus/refs/heads/master/commandline/49-micronucleus.rules > 49-micronucleus.rules
 sudo mv 49-micronucleus.rules /etc/udev/rules.d/
@@ -33,5 +31,5 @@ Due to limitations of the programmable memory on this microcontroller,
 
 ### Build run and flash
 ```
-DEVICE=attiny85 cargo +nightly-2022-07-10 run --release
+DEVICE=attiny85 cargo run --release
 ```

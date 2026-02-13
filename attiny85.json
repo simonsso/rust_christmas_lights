@@ -7,7 +7,7 @@
     "linker": "avr-gcc",
     "linker-flavor": "gcc",
     "llvm-target": "avr-unknown-unknown",
-    "os": "unknown",
+    "os": "none",
 
     "position-independent-executables": false,
     "exe-suffix": ".elf",
@@ -17,5 +17,6 @@
 
     "target-c-int-width": "16",
     "target-endian": "little",
-    "target-pointer-width": "16"
+    "target-pointer-width": "16",
+    "max-atomic-width": 8
 }
